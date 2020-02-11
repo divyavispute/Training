@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='style.css' type='text/css' />
+	<script src="validation.js"></script>
+</head>
+
+<body onload="document.registration.userid.focus();">
+
+	<h1>Registration Form</h1>
+	
+	<form name="registration" onSubmit="return formValidation();">
+
+		<ul>
+			<li><label for="Email">Email:</label></li>	
+			<li><input type="email" name="email"></li>
+			<li><label for="Password">Password:</label></li>
+			<li><input type="password" name="passid"></li>
+			<li><label for="Confirm Password">Confirm Password:<br/></label></li>
+			<li><input type="password" name="cpassid"></li>
+			<li><label for="First Name">First Name:</label></li>
+			<li><input type="text" name="fname" ></li>
+			<li><label for="First Name">Last Name:</label></li>
+			<li><input type="text" name="lname"></li>
+			<li><label for="First Name">Zip Code:</label></li>
+			<li><input type="text" name="zip"></li>
+
+			<li><input type="submit" name="submit" value="Submit" /></li>
+		</ul>
+
+	</form>
+	
+</body>
+</html>
